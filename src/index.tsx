@@ -37,7 +37,6 @@ type SmaatoAdInit = {
   getUsPrivacyString(): Promise<any>;
   isCompanionAdSkippable(): Promise<any>;
   setIsCompanionAdSkippable(skip: boolean): Promise<any>;
-  getAdContentRating(): Promise<any>;
 };
 const Smaato = RNInitialize;
 type IR = {
