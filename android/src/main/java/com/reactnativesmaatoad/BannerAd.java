@@ -1,6 +1,7 @@
 package com.reactnativesmaatoad;
 
 import android.content.Context;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 
@@ -27,7 +28,7 @@ public class BannerAd extends ReactViewGroup {
 
   private final Runnable measureRunnable = () -> {
     for (int i = 0;i < getChildCount();i++) {
-      BannerView child = (BannerView) getChildAt(i);
+      View child = getChildAt(i);
       child.measure(
         MeasureSpec.makeMeasureSpec(getMeasuredWidth(),MeasureSpec.EXACTLY),
         MeasureSpec.makeMeasureSpec(getMeasuredHeight(),MeasureSpec.EXACTLY)

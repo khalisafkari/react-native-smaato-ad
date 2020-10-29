@@ -136,4 +136,5 @@ dependencies {
   implementation 'com.smaato.android.sdk:smaato-sdk-banner:21.5.2'
   implementation 'com.smaato.android.sdk:smaato-sdk-interstitial:21.5.2'
   implementation 'com.smaato.android.sdk:smaato-sdk-rewarded-ads:21.5.2'
+  implementation 'com.smaato.android.sdk:smaato-sdk-native:21.5.3'
 }

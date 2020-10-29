@@ -10,6 +10,8 @@ import SDK, {
 export default function App() {
   React.useEffect(() => {
     SDK.init('1100044945');
+    SDK.setCoppa(true);
+    SDK.getCoppa().then(console.log)
   }, []);
 
   const showAdIntertital = useCallback(() => {
@@ -25,7 +27,7 @@ export default function App() {
       <Button title={'ad Intertitial'} onPress={showAdIntertital} />
       <Button title={'ad rewardAd'} onPress={showAdRewards} />
       <BannerAd
-        adID={'130897362'}
+        adID={'130626424'}
         onAdLoaded={(e: any) => {
           console.log(e.nativeEvent);
         }}
